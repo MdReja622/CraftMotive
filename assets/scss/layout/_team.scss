@@ -1,0 +1,101 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  11. TEAM CSS START
+/*----------------------------------------*/
+.rs_team {
+    &_img {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &:hover img {
+        filter: blur(1px);
+    }
+
+    &_social {
+        padding: 30px 20px;
+        background-color: var(--tp-theme-3);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -30px;
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0;
+
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 36px;
+            text-align: center;
+            background: transparent;
+            color: var(--tp-common-white);
+            margin-right: 5px;
+            border: 2px solid var(--tp-border-5);
+
+            &:hover {
+                background: var(--tp-theme-1);
+                color: var(--tp-common-white);
+                border-color: var(--tp-theme-1);
+            }
+        }
+    }
+
+    &_member {
+        &_name {
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 0;
+            transition: 0.3s;
+        }
+
+        &_role {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--tp-text-body);
+        }
+    }
+
+    &:hover .rs_team_social {
+        bottom: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover .rs_team_member_name {
+        color: var(--tp-theme-1);
+    }
+}
+
+
+
+
+.rs_slider_nav {
+    .rs_team_slider {
+
+        &_next,
+        &_prev {
+            border-color: var(--tp-theme-3);
+            color: var(--tp-common-black);
+            transition: 0.3s;
+            top: 55%;
+
+            &:hover {
+                background: var(--tp-theme-3);
+                color: var(--tp-common-white);
+
+            }
+        }
+
+    }
+}

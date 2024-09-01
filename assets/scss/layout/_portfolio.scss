@@ -1,0 +1,105 @@
+/* ====================== [ Start Testimonials ] ====================== */
+
+.rs_portfolio_sort-select {
+    width: 320px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    float: right;
+
+    &::after {
+        right: 20px;
+    }
+
+    .list {
+        right: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+            0 1px 3px rgba(0, 0, 0, 0.08);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.8s;
+        padding: 10px 0 0 0;
+
+        li:hover {
+            background: var(--tp-gray-bg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    &.open .list {
+        transform: scaleY(1);
+    }
+}
+
+.rs_portfolio_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.rs_portfolio_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.rs_portfolio_item {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.rs_portfolio_item_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+    right: 14px;
+    padding: 20px 20px;
+    background-color: var(--tp-theme-3);
+    margin-bottom: -30px;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.rs_portfolio_item_title {
+    color: var(--tp-common-white);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.rs_portfolio_item_description {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.rs_portfolio_item:hover .rs_portfolio_item_overlay {
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+
+.rs_btn_more {
+    font-size: 24px;
+    padding: 25px 35px;
+    text-transform: uppercase;
+    transition: 0.3s all;
+    border: 1px solid var(--tp-common-black);
+
+    &:hover {
+        background-color: var(--tp-common-black);
+        color: var(--tp-common-white);
+        border-color: var(--tp-common-black);
+    }
+}
+
+
+/* ====================== [ End Testimonials ] ====================== */

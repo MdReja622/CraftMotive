@@ -1,0 +1,22 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  08. COUNTER CSS START
+/*----------------------------------------*/
+
+.rs_counter {
+    &_number {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--tp-common-black);
+
+    }
+
+    &text {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--tp-common-black);
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}

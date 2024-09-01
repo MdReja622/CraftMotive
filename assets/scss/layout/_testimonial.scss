@@ -1,0 +1,64 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  14. TESTIMONIAL CSS START
+/*----------------------------------------*/
+.rs_testimonial_thumb {
+    width: 90px;
+    height: 90px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.swiper-slide.swiper-slide-active .rs_testimonial_thumb {
+
+    border-color: var(--tp-theme-2);
+    transform: scale(1);
+}
+
+.rs_testimonial_text p {
+    font-size: 30px;
+    line-height: 1.3;
+    font-family: var(--tp-ff-syne);
+    margin-bottom: 30px;
+}
+
+.rs_testimonial_client {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.rs_testimonial_client_role {
+    font-size: 16px;
+}
+
+
+.rs_testimonial_thumb_slider .swiper-slide {
+
+    width: unset;
+}
+
+
+.rs_slider_nav {
+    .rs_testi {
+
+        &_next,
+        &_prev {
+            border-color: var(--tp-theme-3);
+            color: var(--tp-common-black);
+            transition: 0.3s;
+            top: 55%;
+
+            &:hover {
+                background: var(--tp-theme-3);
+                color: var(--tp-common-white);
+
+            }
+        }
+
+    }
+}
