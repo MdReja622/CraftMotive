@@ -222,6 +222,17 @@ textarea {
 
 	@include tp-placeholder {
 		color: #84848B;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+
+	&:focus {
+		outline: none;
+
+		&::placeholder {
+			opacity: 0;
+		}
 	}
 
 }
